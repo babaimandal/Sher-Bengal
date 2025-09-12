@@ -47,6 +47,7 @@
         slidesToScroll: 1,
         prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-arrow-left-circle"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="bi bi-arrow-right-circle"></i></button>',
+        autoplay: true,
         responsive: [
             {
             breakpoint: 999,
@@ -73,6 +74,7 @@
                 slidesToScroll: 1,
                 arrows: false,
                 autoplay: true,
+                autoplaySpeed: 500
                 
             }
             }
