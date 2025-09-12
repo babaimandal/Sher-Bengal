@@ -1,0 +1,342 @@
+:root{
+    --button-bg-color: #C69A5A;
+    --primary-color: #C69A5A;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    display: inline-block;
+}
+.cmn-icon-bg{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: inline-flex;
+    color: var(--button-bg-color);
+    align-items: center;
+    justify-content: center;
+}
+/* ------------------ ----------  Header Start ------------ ----------------- */
+.header-wrapper {
+    padding-block-start: 15px;
+    padding-block-end: 10px;
+}
+.header-wrapper header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrapper header .logo-block {
+    width: 18%;
+}
+.header-wrapper header .logo-block  a img{
+    width: 100%;
+}
+.contact-social-block {
+    gap: 25px;
+    align-items: center;
+}
+.contact-social-block .lt-block{
+    gap: 10px;
+}
+.contact-social-block .lt-block span{
+    display: inline-block;
+}
+.contact-social-block .lt-block ul{
+    gap: 10px;
+}
+.contact-social-block .lt-block ul li a i{
+    color: #000;
+    font-size: 15px;
+}
+.contact-social-block .rt-block .contact-button a {
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* --------- Stellar Nav --------------- */
+.header-wrapper header .nav-block .stellarnav > ul > li > a {
+    padding: 0;
+    padding-right: 28px;
+    color: #000000;
+    padding-block: 10px;
+}
+.header-wrapper header .nav-block .stellarnav > ul > li > a {
+    padding-inline: 14px;
+}
+
+.header-wrapper header .nav-block .stellarnav.mobile > ul > li {
+    display: block;
+    padding-block: 2px;
+    background: #06070a;
+}
+.header-wrapper header .nav-block .stellarnav.mobile > ul {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.stellarnav{ transition:all 0.3s ease-in-out; }
+
+/* /-- Moblie Menu 1 --/ */
+.stellarnav .menu-toggle span.bars span { width: 35px; height: 2px; background-color: #000000; display: block; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.stellarnav.active .bars span:nth-child(2){ opacity:0; }
+.stellarnav.active .bars span:nth-child(1){
+  -webkit-transform: translateY(9px) rotate(45deg);
+  -ms-transform: translateY(9px) rotate(45deg);
+  -o-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg); }
+.stellarnav.active .bars span:nth-child(3){
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  -o-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);}
+
+/* ------------------ ----------  Banner Start ------------ ----------------- */
+.banner-wrapper .big-block .video-block{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+}
+.banner-wrapper .big-block .video-block button {
+    bottom: 17px;
+    position: absolute;
+    right: 10px;
+}
+.banner-wrapper .big-block{
+    position: relative;
+}
+.banner-wrapper .big-block video{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: unset;
+}
+/* ----------- Form Block ----------- */
+.banner-wrapper .big-block .form-block {
+    width: 90%;
+    position: absolute;
+    bottom: -59px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding-inline: 18px;
+    padding-block: 13px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.banner-wrapper .big-block .form-block form{
+    gap: 10px;
+    align-items: center;
+}
+.banner-wrapper .big-block .form-block form .box {
+    width: 20%;
+    height: 100px;
+}
+.banner-wrapper .big-block .form-block form .box input{
+    border: 1px solid #000;
+}
+.banner-wrapper .big-block .form-block form .box .counter-btn{
+    align-items: center;
+
+}
+.banner-wrapper .big-block .form-block form .box .counter-btn button{
+    background-color: red;
+    width: 20%;
+}
+.banner-wrapper .big-block .form-block form .button-box{
+    display: inline-flex;
+    align-items: center;
+    
+}
+.banner-wrapper .big-block .form-block form .box button.main-buttton {
+    background-color: var(--button-bg-color);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 50px;
+    padding-block: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+.banner-wrapper .big-block .form-block form .box button.main-buttton i{
+    width: 24px;
+}
+
+/* ------------------ ----------  Welcome To Sher Bengal beach  Resort ------------ ----------------- */
+.sher-bengal-beach-resort-wrapper {
+    padding-block-start: 106px;
+}
+.sher-bengal-beach-resort-wrapper .row{
+    --bs-gutter-y : 30px;
+}
+.sher-bengal-beach-resort-wrapper .slide-image-block .box {
+    width: 97%;
+    height: 250px;
+    background-color: red;
+}
+.sher-bengal-beach-resort-wrapper .slide-image-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+/* ------------ Slider Start ---------- */
+ul.slick-dots{
+    display: none !important;
+}
+.sher-bengal-beach-resort-wrapper button.slick-arrow {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    background: none;
+}
+.sher-bengal-beach-resort-wrapper button.slick-arrow  i{
+    font-size: 33px;
+}
+.sher-bengal-beach-resort-wrapper button.slick-prev {
+    z-index: 1;
+    top: 50%;
+    left: -31px;
+}
+.sher-bengal-beach-resort-wrapper button.slick-next {
+    z-index: 1;
+    top: 50%;
+    right: -56px;
+}
+/* ------------ Slider End ---------- */
+.sher-bengal-beach-resort-wrapper .content-block {
+    padding-block-start: 28px;
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block {
+    padding-inline-end: 160px;
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block h2{
+    font-size: 35px;
+    color: #000;
+    margin: 0;
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block h2 span{
+    color: var(--primary-color);
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block p {
+    color: #000;
+    font-size: 15px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    margin: 0;
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block a {
+    border: 1px solid var(--button-bg-color);
+    border-radius: 50px;
+    padding-inline: 25px;
+    padding-block: 7px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.sher-bengal-beach-resort-wrapper .content-block  .img-block{
+    height: 350px;
+    width: 100%;
+    background-color: seagreen;
+}
+.sher-bengal-beach-resort-wrapper .content-block  .img-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------ ----------  Amenities && Facilities Block ------------ ----------------- */
+.amenities-and-facilites-wrapper {
+    padding-block-start: 50px;
+    padding-block-end: 60px;
+}
+.amenities-and-facilites-wrapper .big-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--button-bg-color);
+    padding-block: 12px;
+    padding-inline: 5px;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block .box {
+    width: 100%;
+    height: 150px;
+    border-right: 1px solid #5c580461;
+    background: #fff3de;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block .box .content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block .box .content p {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block .box .content i{
+    color: var(--primary-color);
+    font-size: 25px;
+}
+.amenities-and-facilites-wrapper .big-block .title-block {
+    width: 20%;
+    background-color: var(--button-bg-color);
+    height: 150px;
+    padding-inline: 53px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amenities-and-facilites-wrapper .big-block .title-block h2{
+    margin: 0;
+    color: #fff;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block{
+    width: 80%;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block .slick-track{
+    width: 100%;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block button.slick-arrow{
+    display: none !important;
+}
+
+
+a.menu-toggle.full{
+    padding: 0;
+}
+.stellarnav .menu-toggle span.bars{
+    margin: 0;
+}
