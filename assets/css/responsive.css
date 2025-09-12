@@ -1,0 +1,195 @@
+@media only screen and (max-width : 1200px) {
+.header-wrapper header .nav-block .stellarnav > ul > li > a {
+
+    padding-right: 17px;
+
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block {
+    padding-inline-end: 82px;
+}
+.header-wrapper header .nav-block .stellarnav > ul > li > a {
+   color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+@media only screen and (max-width : 1099px){
+    .header-wrapper header{
+        flex-direction: column;
+                row-gap: 8px;
+    }
+    .header-wrapper header .logo-block {
+    width: 28%;
+}
+.contact-social-block .rt-block .contact-button a {
+    padding-inline: 27px;
+    padding-block: 7px;
+}
+.contact-social-block {
+    gap: 43px;
+    
+}
+.contact-social-block .lt-block {
+    gap: 25px;
+}
+.contact-social-block .lt-block ul {
+    gap: 18px;
+}
+
+
+
+}
+@media only screen and (max-width : 999px){
+    .sher-bengal-beach-resort-wrapper .content-block .text-block {
+    padding-inline-end: 9px;
+}
+.amenities-and-facilites-wrapper .big-block .title-block h2{
+    font-size: 22px;
+}
+.amenities-and-facilites-wrapper .big-block .title-block{
+    padding: 0;
+}
+.banner-wrapper .big-block .form-block form{
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.banner-wrapper .big-block .form-block form .box {
+    width: 48%;
+    height: 71px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width : 768px){
+    .amenities-and-facilites-wrapper .big-block .title-block h2 {
+    font-size: 18px;
+}
+.sher-bengal-beach-resort-wrapper .slide-image-block .box {
+    height: 177px;
+    margin: 0 auto;
+    background-color: red;
+}
+.amenities-and-facilites-wrapper .big-block .title-block {
+    width: 100%;
+    height: 84px;
+    margin-bottom: 10px;
+}
+.amenities-and-facilites-wrapper .big-block{
+    flex-direction: column;
+}
+.amenities-and-facilites-wrapper .big-block .facilites-block {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-wrapper .big-block .video-block {
+
+    height: 371px;
+    
+}
+.header-wrapper header{
+        flex-direction: row;
+    }
+    .contact-social-block .lt-block{
+        display: none !important;
+    }
+    .contact-social-block{
+        order: 3;
+    }
+    .header-wrapper header .logo-block{
+        order: 2;
+    }
+.banner-wrapper .big-block .form-block {
+    position: inherit;
+    transform: none;
+    
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.banner-wrapper .big-block {
+    position: inherit;
+}
+.sher-bengal-beach-resort-wrapper {
+    padding-block-start: 32px;
+}
+.header-wrapper header .nav-block .stellarnav > ul > li > a {
+    color: #ffffff;
+}
+}
+@media only screen and (max-width : 499px){
+    .contact-social-block .rt-block .contact-button a {
+    padding-inline: 13px;
+    font-size: 13px;
+}
+.contact-social-block .rt-block .contact-button a i{
+    font-size: 13px;
+}
+.header-wrapper header .logo-block {
+    width: 42%;
+}
+.stellarnav .menu-toggle span.bars span {
+    width: 28px;
+    height: 2px;
+    margin: 7px auto;
+    
+}
+.banner-wrapper .big-block .video-block {
+    height: 229px;
+}
+.contact-social-block .rt-block .contact-button a i{
+        width: 24px;
+}
+.sher-bengal-beach-resort-wrapper {
+    padding-block-start: 29px;
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block h2{
+    font-size: 28px;
+}
+.sher-bengal-beach-resort-wrapper .content-block .text-block a {
+    font-size: 13px;
+}
+.sher-bengal-beach-resort-wrapper .content-block  .img-block {
+    height: 236px;
+   
+}
+.banner-wrapper .big-block .form-block form .box{
+    width: 98%;
+}
+}
+
+
+
+
+
+
+
+
+
