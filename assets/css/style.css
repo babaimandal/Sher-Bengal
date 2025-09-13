@@ -1,342 +1,618 @@
-:root{
-    --button-bg-color: #C69A5A;
-    --primary-color: #C69A5A;
+:root {
+	--button-bg-color: #C69A5A;
+	--primary-color: #C69A5A;
 }
+
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
-body{
-    padding: 0;
-    margin: 0;
+
+body {
+	padding: 0;
+	margin: 0;
 }
-a{
-    display: inline-block;
-    text-decoration: none;
+
+a {
+	display: inline-block;
+	text-decoration: none;
 }
-img{
-    display: inline-block;
+
+img {
+	display: inline-block;
 }
-.cmn-icon-bg{
-    background-color: #fff;
-    border-radius: 50%;
-    width: 30px;
-    aspect-ratio: 1/1;
-    display: inline-flex;
-    color: var(--button-bg-color);
-    align-items: center;
-    justify-content: center;
+
+.cmn-icon-bg {
+	background-color: #fff;
+	border-radius: 50%;
+	width: 30px;
+	aspect-ratio: 1/1;
+	display: inline-flex;
+	color: var(--button-bg-color);
+	align-items: center;
+	justify-content: center;
 }
+
+.cmn-title {
+	font-family: cursive;
+	font-size: 35px;
+	font-weight: 700;
+	margin: 0;
+	padding-bottom: 22px;
+	text-align: center;
+}
+
 /* ------------------ ----------  Header Start ------------ ----------------- */
 .header-wrapper {
-    padding-block-start: 15px;
-    padding-block-end: 10px;
+	padding-block-start: 15px;
+	padding-block-end: 10px;
 }
-.header-wrapper header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.header-wrapper header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
 .header-wrapper header .logo-block {
-    width: 18%;
+	width: 18%;
 }
-.header-wrapper header .logo-block  a img{
-    width: 100%;
+
+.header-wrapper header .logo-block a img {
+	width: 100%;
 }
+
 .contact-social-block {
-    gap: 25px;
-    align-items: center;
+	gap: 25px;
+	align-items: center;
 }
-.contact-social-block .lt-block{
-    gap: 10px;
+
+.contact-social-block .lt-block {
+	gap: 10px;
 }
-.contact-social-block .lt-block span{
-    display: inline-block;
+
+.contact-social-block .lt-block span {
+	display: inline-block;
 }
-.contact-social-block .lt-block ul{
-    gap: 10px;
+
+.contact-social-block .lt-block ul {
+	gap: 10px;
 }
-.contact-social-block .lt-block ul li a i{
-    color: #000;
-    font-size: 15px;
+
+.contact-social-block .lt-block ul li a i {
+	color: #000;
+	font-size: 15px;
 }
+
 .contact-social-block .rt-block .contact-button a {
-    background-color: var(--button-bg-color);
-    color: #fff;
-    padding-inline: 15px;
-    padding-block: 10px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+	background-color: var(--button-bg-color);
+	color: #fff;
+	padding-inline: 15px;
+	padding-block: 10px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
 }
 
 /* --------- Stellar Nav --------------- */
-.header-wrapper header .nav-block .stellarnav > ul > li > a {
-    padding: 0;
-    padding-right: 28px;
-    color: #000000;
-    padding-block: 10px;
-}
-.header-wrapper header .nav-block .stellarnav > ul > li > a {
-    padding-inline: 14px;
+.header-wrapper header .nav-block .stellarnav>ul>li>a {
+	padding: 0;
+	padding-right: 28px;
+	color: #000000;
+	padding-block: 10px;
 }
 
-.header-wrapper header .nav-block .stellarnav.mobile > ul > li {
-    display: block;
-    padding-block: 2px;
-    background: #06070a;
-}
-.header-wrapper header .nav-block .stellarnav.mobile > ul {
-    border-top: 1px solid rgba(255, 255, 255, .15);
-    position: absolute;
-    width: 100%;
-    left: 0;
-    z-index: 1;
+.header-wrapper header .nav-block .stellarnav>ul>li>a {
+	padding-inline: 14px;
 }
 
-.stellarnav{ transition:all 0.3s ease-in-out; }
+.header-wrapper header .nav-block .stellarnav.mobile>ul>li {
+	display: block;
+	padding-block: 2px;
+	background: #06070a;
+}
+
+.header-wrapper header .nav-block .stellarnav.mobile>ul {
+	border-top: 1px solid rgba(255, 255, 255, .15);
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.stellarnav {
+	transition: all 0.3s ease-in-out;
+}
 
 /* /-- Moblie Menu 1 --/ */
-.stellarnav .menu-toggle span.bars span { width: 35px; height: 2px; background-color: #000000; display: block; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-.stellarnav.active .bars span:nth-child(2){ opacity:0; }
-.stellarnav.active .bars span:nth-child(1){
-  -webkit-transform: translateY(9px) rotate(45deg);
-  -ms-transform: translateY(9px) rotate(45deg);
-  -o-transform: translateY(9px) rotate(45deg);
-  transform: translateY(9px) rotate(45deg); }
-.stellarnav.active .bars span:nth-child(3){
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  -ms-transform: translateY(-10px) rotate(-45deg);
-  -o-transform: translateY(-10px) rotate(-45deg);
-  transform: translateY(-10px) rotate(-45deg);}
+.stellarnav .menu-toggle span.bars span {
+	width: 35px;
+	height: 2px;
+	background-color: #000000;
+	display: block;
+	margin: 8px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.stellarnav.active .bars span:nth-child(2) {
+	opacity: 0;
+}
+
+.stellarnav.active .bars span:nth-child(1) {
+	-webkit-transform: translateY(9px) rotate(45deg);
+	-ms-transform: translateY(9px) rotate(45deg);
+	-o-transform: translateY(9px) rotate(45deg);
+	transform: translateY(9px) rotate(45deg);
+}
+
+.stellarnav.active .bars span:nth-child(3) {
+	-webkit-transform: translateY(-10px) rotate(-45deg);
+	-ms-transform: translateY(-10px) rotate(-45deg);
+	-o-transform: translateY(-10px) rotate(-45deg);
+	transform: translateY(-10px) rotate(-45deg);
+}
 
 /* ------------------ ----------  Banner Start ------------ ----------------- */
-.banner-wrapper .big-block .video-block{
-    width: 100%;
-    height: 600px;
-    background-color: black;
-    position: relative;
+.banner-wrapper .big-block .video-block {
+	width: 100%;
+	height: 600px;
+	background-color: black;
+	position: relative;
 }
+
 .banner-wrapper .big-block .video-block button {
-    bottom: 17px;
+    bottom: 83px;
     position: absolute;
     right: 10px;
+    width: 47px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 3px solid var(--button-bg-color);
 }
-.banner-wrapper .big-block{
-    position: relative;
+.banner-wrapper .big-block .video-block button:active{
+    transform: scale(0.10);
+    transition: ease-in-out 0.5s;
 }
-.banner-wrapper .big-block video{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: unset;
+.banner-wrapper .big-block .video-block button i{
+    color: var(--primary-color);
 }
+.banner-wrapper .big-block {
+	position: relative;
+}
+
+.banner-wrapper .big-block video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: unset;
+}
+
 /* ----------- Form Block ----------- */
 .banner-wrapper .big-block .form-block {
-    width: 90%;
-    position: absolute;
-    bottom: -59px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding-inline: 18px;
-    padding-block: 13px;
-    border-radius: 10px;
-    border: 1px solid #000;
+	width: 90%;
+	position: absolute;
+	bottom: -59px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	padding-inline: 18px;
+	padding-block: 13px;
+	border-radius: 10px;
+	border: 1px solid #000;
 }
-.banner-wrapper .big-block .form-block form{
-    gap: 10px;
-    align-items: center;
+
+.banner-wrapper .big-block .form-block form {
+	gap: 10px;
+	align-items: center;
 }
+
 .banner-wrapper .big-block .form-block form .box {
-    width: 20%;
-    height: 100px;
+	width: 20%;
+	height: 100px;
 }
-.banner-wrapper .big-block .form-block form .box input{
-    border: 1px solid #000;
+
+.banner-wrapper .big-block .form-block form .box input {
+	border: 1px solid #000;
 }
-.banner-wrapper .big-block .form-block form .box .counter-btn{
-    align-items: center;
+
+.banner-wrapper .big-block .form-block form .box .counter-btn {
+	align-items: center;
 
 }
-.banner-wrapper .big-block .form-block form .box .counter-btn button{
-    background-color: red;
-    width: 20%;
+
+.banner-wrapper .big-block .form-block form .box .counter-btn button {
+	background-color: red;
+	width: 20%;
 }
-.banner-wrapper .big-block .form-block form .button-box{
-    display: inline-flex;
-    align-items: center;
-    
+
+.banner-wrapper .big-block .form-block form .button-box {
+	display: inline-flex;
+	align-items: center;
+
 }
+
 .banner-wrapper .big-block .form-block form .box button.main-buttton {
-    background-color: var(--button-bg-color);
-    border: none;
-    outline: none;
-    width: 100%;
-    border-radius: 50px;
-    padding-block: 12px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 22px;
+	background-color: var(--button-bg-color);
+	border: none;
+	outline: none;
+	width: 100%;
+	border-radius: 50px;
+	padding-block: 12px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 22px;
 }
-.banner-wrapper .big-block .form-block form .box button.main-buttton i{
-    width: 24px;
+
+.banner-wrapper .big-block .form-block form .box button.main-buttton i {
+	width: 24px;
 }
 
 /* ------------------ ----------  Welcome To Sher Bengal beach  Resort ------------ ----------------- */
 .sher-bengal-beach-resort-wrapper {
-    padding-block-start: 106px;
+	padding-block-start: 106px;
 }
-.sher-bengal-beach-resort-wrapper .row{
-    --bs-gutter-y : 30px;
+
+.sher-bengal-beach-resort-wrapper .row {
+	--bs-gutter-y: 30px;
 }
+
 .sher-bengal-beach-resort-wrapper .slide-image-block .box {
-    width: 97%;
-    height: 250px;
-    background-color: red;
+	width: 97%;
+	height: 250px;
+	background-color: red;
 }
-.sher-bengal-beach-resort-wrapper .slide-image-block img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.sher-bengal-beach-resort-wrapper .slide-image-block img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 
 }
+
 /* ------------ Slider Start ---------- */
-ul.slick-dots{
-    display: none !important;
+ul.slick-dots {
+	display: none !important;
 }
+
 .sher-bengal-beach-resort-wrapper button.slick-arrow {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border: none;
-    outline: none;
-    background: none;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	border: none;
+	outline: none;
+	background: none;
 }
-.sher-bengal-beach-resort-wrapper button.slick-arrow  i{
-    font-size: 33px;
+
+.sher-bengal-beach-resort-wrapper button.slick-arrow i {
+	font-size: 33px;
 }
+
 .sher-bengal-beach-resort-wrapper button.slick-prev {
-    z-index: 1;
-    top: 50%;
-    left: -31px;
+	z-index: 1;
+	top: 50%;
+	left: -31px;
 }
+
 .sher-bengal-beach-resort-wrapper button.slick-next {
-    z-index: 1;
-    top: 50%;
-    right: -56px;
+	z-index: 1;
+	top: 50%;
+	right: -56px;
 }
+
 /* ------------ Slider End ---------- */
 .sher-bengal-beach-resort-wrapper .content-block {
-    padding-block-start: 28px;
+	padding-block-start: 28px;
 }
+
 .sher-bengal-beach-resort-wrapper .content-block .text-block {
-    padding-inline-end: 160px;
+	padding-inline-end: 160px;
 }
-.sher-bengal-beach-resort-wrapper .content-block .text-block h2{
-    font-size: 35px;
-    color: #000;
-    margin: 0;
+
+.sher-bengal-beach-resort-wrapper .content-block .text-block h2 {
+	font-size: 35px;
+	color: #000;
+	margin: 0;
 }
-.sher-bengal-beach-resort-wrapper .content-block .text-block h2 span{
-    color: var(--primary-color);
+
+.sher-bengal-beach-resort-wrapper .content-block .text-block h2 span {
+	color: var(--primary-color);
 }
+
 .sher-bengal-beach-resort-wrapper .content-block .text-block p {
-    color: #000;
-    font-size: 15px;
-    padding-top: 16px;
-    padding-bottom: 24px;
-    margin: 0;
+	color: #000;
+	font-size: 15px;
+	padding-top: 16px;
+	padding-bottom: 24px;
+	margin: 0;
 }
+
 .sher-bengal-beach-resort-wrapper .content-block .text-block a {
-    border: 1px solid var(--button-bg-color);
-    border-radius: 50px;
-    padding-inline: 25px;
-    padding-block: 7px;
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 400;
+	border: 1px solid var(--button-bg-color);
+	border-radius: 50px;
+	padding-inline: 25px;
+	padding-block: 7px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 400;
 }
-.sher-bengal-beach-resort-wrapper .content-block  .img-block{
-    height: 350px;
-    width: 100%;
-    background-color: seagreen;
+
+.sher-bengal-beach-resort-wrapper .content-block .img-block {
+	height: 350px;
+	width: 100%;
+	background-color: seagreen;
 }
-.sher-bengal-beach-resort-wrapper .content-block  .img-block img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.sher-bengal-beach-resort-wrapper .content-block .img-block img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* ------------------ ----------  Amenities && Facilities Block ------------ ----------------- */
 .amenities-and-facilites-wrapper {
-    padding-block-start: 50px;
-    padding-block-end: 60px;
+	padding-block-start: 50px;
+	padding-block-end: 60px;
 }
+
 .amenities-and-facilites-wrapper .big-block {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--button-bg-color);
-    padding-block: 12px;
-    padding-inline: 5px;
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--button-bg-color);
+	padding-block: 12px;
+	padding-inline: 5px;
 }
+
 .amenities-and-facilites-wrapper .big-block .facilites-block .box {
-    width: 100%;
-    height: 150px;
-    border-right: 1px solid #5c580461;
-    background: #fff3de;
+	width: 100%;
+	height: 150px;
+	border-right: 1px solid #5c580461;
+	background: #fff3de;
 }
-.amenities-and-facilites-wrapper .big-block .facilites-block .box .content{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
+
+.amenities-and-facilites-wrapper .big-block .facilites-block .box .content {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex-direction: column;
 }
+
 .amenities-and-facilites-wrapper .big-block .facilites-block .box .content p {
-    margin: 0;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 18px;
+	margin: 0;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 18px;
 }
-.amenities-and-facilites-wrapper .big-block .facilites-block .box .content i{
-    color: var(--primary-color);
-    font-size: 25px;
+
+.amenities-and-facilites-wrapper .big-block .facilites-block .box .content i {
+	color: var(--primary-color);
+	font-size: 25px;
 }
+
 .amenities-and-facilites-wrapper .big-block .title-block {
-    width: 20%;
-    background-color: var(--button-bg-color);
-    height: 150px;
-    padding-inline: 53px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 20%;
+	background-color: var(--button-bg-color);
+	height: 150px;
+	padding-inline: 53px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.amenities-and-facilites-wrapper .big-block .title-block h2{
-    margin: 0;
-    color: #fff;
+
+.amenities-and-facilites-wrapper .big-block .title-block h2 {
+	margin: 0;
+	color: #fff;
 }
-.amenities-and-facilites-wrapper .big-block .facilites-block{
-    width: 80%;
+
+.amenities-and-facilites-wrapper .big-block .facilites-block {
+	width: 80%;
 }
-.amenities-and-facilites-wrapper .big-block .facilites-block .slick-track{
-    width: 100%;
+
+.amenities-and-facilites-wrapper .big-block .facilites-block .slick-track {
+	width: 100%;
 }
-.amenities-and-facilites-wrapper .big-block .facilites-block button.slick-arrow{
-    display: none !important;
+
+.amenities-and-facilites-wrapper .big-block .facilites-block button.slick-arrow {
+	display: none !important;
 }
 
 
-a.menu-toggle.full{
-    padding: 0;
+a.menu-toggle.full {
+	padding: 0;
 }
-.stellarnav .menu-toggle span.bars{
-    margin: 0;
+
+.stellarnav .menu-toggle span.bars {
+	margin: 0;
+}
+
+/* ------------------ ----------  Ouer Room Block ------------ ----------------- */
+.our-room-wrapper {
+	background-color: #F3F4F8;
+	padding-bottom: 20px;
+}
+.our-room-wrapper h2{
+    margin-top: 15px;
+}
+.our-room-wrapper .image-block img {
+	width: 100%;
+	height: 100%;
+}
+
+.our-room-wrapper .big-block {
+	background-color: #fff;
+}
+
+.our-room-wrapper .text-block {
+	padding-inline: 24px;
+	padding-block-end: 15px;
+}
+
+.our-room-wrapper .text-block h3 {
+	color: #292929;
+	font-size: 25px;
+	text-transform: capitalize;
+	font-family: auto;
+	font-weight: 600;
+	margin: 0;
+	padding-top: 12px;
+	padding-bottom: 14px;
+}
+
+.our-room-wrapper .text-block ul li {
+	font-size: 16px;
+	color: rgb(23, 23, 23);
+	padding-bottom: 7px;
+	display: inline-flex;
+}
+
+.our-room-wrapper .text-block ul li i {
+	color: var(--primary-color);
+	padding-right: 10px;
+}
+
+/* ------------------ ----------  Our Room Slide All ------------ ----------------- */
+.our-room-slide-all-wrapper {
+	margin-bottom: 30px;
+}
+.our-room-slide-all-wrapper h2{
+    margin-top: 15px;
+}
+.our-room-slide-all-wrapper .slide-image-block {
+	border-bottom: 1px solid #0000005e;
+}
+
+.our-room-slide-all-wrapper .slide-image-block .box {
+	width: 95%;
+	height: 250px;
+	background-color: red;
+	position: relative;
+	margin: 0 auto;
+}
+
+.our-room-slide-all-wrapper .title h3 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: auto;
+	text-align: center;
+	border: 1px solid #909090;
+	margin-top: 4px;
+	padding-block: 7px;
+}
+
+.our-room-slide-all-wrapper .slide-image-block img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.our-room-slide-all-wrapper .slide-image-block i {
+	position: absolute;
+	left: -7px;
+	bottom: -17px;
+	background-color: var(--button-bg-color) !important;
+	z-index: 1111111;
+	color: #fff;
+}
+
+/* ------------ Slider Start ---------- */
+ul.slick-dots {
+	display: none !important;
+}
+
+.our-room-slide-all-wrapper button.slick-arrow {
+	display: none !important;
+}
+
+.our-room-slide-all-wrapper .slick-track {
+	height: 344px;
+}
+
+/* ------------ Slider End ---------- */
+
+/* ------------------ ----------  Contact and overView Sher Bengal ------------ ----------------- */
+/* ----------------- Easy-accessibility-block --------------- */
+.easy-Accessibility-wrapper .easy-accessibility-block h2 {
+	font-size: 28px;
+	font-family: serif;
+	border-bottom: 1px solid var(--button-bg-color);
+	margin: 0;
+	padding-bottom: 10px;
+	margin-bottom: 19px;
+}
+
+.easy-Accessibility-wrapper .easy-accessibility-block ul li {
+	font-size: 15px;
+	color: #000;
+	font-weight: 600;
+	padding-bottom: 14px;
+}
+
+.easy-Accessibility-wrapper .easy-accessibility-block ul li::marker {
+	color: var(--button-bg-color);
+	font-size: 20px;
+}
+
+.easy-Accessibility-wrapper .easy-accessibility-block ul li span {
+	color: #292929;
+	font-weight: 400;
+	display: block;
+}
+
+/* ----------------- Easy-accessibility-block --------------- */
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .row {
+	--bs-gutter-y: 20px;
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal h2 {
+	font-family: sans-serif;
+	font-weight: 700;
+	margin: 0;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block {
+	padding-inline: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding-block: 13px;
+	border: 1px solid var(--primary-color);
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .img-block {
+	width: 100%;
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .img-block img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .text-block {
+	text-align: center;
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .text-block h3 {
+	font-size: 16px;
+	color: #7a5b2e;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 4px;
+}
+
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .text-block a {
+	font-size: 15px;
+	font-weight: 600;
+	color: #7a5b2e;
 }

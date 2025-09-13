@@ -67,7 +67,9 @@
     width: 48%;
     height: 71px;
 }
-
+.our-room-wrapper .row {
+    --bs-gutter-y: 25px;
+}
 
 
 
@@ -182,6 +184,54 @@
 }
 .banner-wrapper .big-block .form-block form .box{
     width: 98%;
+}
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal h2 {
+    font-size: 22px;
+    margin-top: 17px;
+}
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .text-block a {
+    font-size: 12px;
+    
+}
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block .text-block h3 {
+    font-size: 14px;
+
+}
+.easy-Accessibility-wrapper .sightseeing-in-sherbengal .block {
+    padding-block: 7px;
+}
+.easy-Accessibility-wrapper .easy-accessibility-block ul li {
+       padding-bottom: 4px;
+}
+.easy-Accessibility-wrapper .easy-accessibility-block h2 {
+    font-size: 22px;
+        padding-bottom: 8px;
+    margin-bottom: 9px;
+}
+.our-room-slide-all-wrapper {
+    margin-bottom: 23px;
+    padding-block: 13px;
+}
+.cmn-title {
+    font-size: 28px;
+    padding-bottom: 0;
+}
+.our-room-wrapper .text-block h3 {
+    font-size: 20px;
+}
+.our-room-wrapper .text-block ul li {
+    font-size: 13px;
+    padding-bottom: 3px;
+    
+}
+.our-room-slide-all-wrapper h2{
+    padding-bottom: 15px;
+}
+.our-room-wrapper h2{
+    padding-top: 15px;
+}
+.amenities-and-facilites-wrapper {
+    padding-block-end: 31px;
 }
 }
 

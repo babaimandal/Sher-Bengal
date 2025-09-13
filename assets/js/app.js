@@ -22,24 +22,30 @@
 
 
 // Banner Video ------------
-//   const btn = document.getElementById("playBtn");
-//   const video = document.getElementById("myVideo");
+const btn = document.getElementById("playBtn");
+  const video = document.getElementById("myVideo");
 
-//   btn.addEventListener("click", () => {
-//     if (video.paused) {
-//       video.play();
-//       btn.textContent = "Pause"; 
-//     } else {
-//       video.pause();
-//       btn.textContent = "Play";
-//     }
-//   });
+  // initial Button textContent
+  window.addEventListener("load", () => {
+    video.play();
+    btn.innerHTML = '<i class="bi bi-play-fill"></i>'; 
+  });
+
+  
+  btn.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = '<i class="bi bi-play-fill"></i>'; 
+    } else {
+      video.pause();
+      btn.innerHTML = '<i class="bi bi-pause"></i>';
+    }
+  });
 
 
 
-
-
-    jQuery('.slide-image-block').slick({
+// -------------------- Sher Bengal beach  Resort -------------------
+    jQuery('.sher-bengal-beach-resort-wrapper .slide-image-block').slick({
         dots: true,
         infinite: true,
         speed: 300,
@@ -85,17 +91,7 @@
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
+// --------------------------- Amenities && Facilities Block ---------------------
     jQuery('.facilites-block-slide').slick({
         dots: true,
         infinite: true,
@@ -141,4 +137,58 @@
             // instead of a settings object
         ]
     });
+// --------------------------- Our Room Slide All ---------------------
+jQuery('.our-room-slide-all-wrapper .slide-image-block').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-arrow-left-circle"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="bi bi-arrow-right-circle"></i></button>',
+        autoplay: true,
+        autoplaySpeed: 1000,
+
+        responsive: [
+            {
+            breakpoint: 999,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+
+
+
+
+
+
+
 
